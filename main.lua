@@ -252,10 +252,7 @@ function love.update(dt)
     ]]
 
     --CODE FOR REVIEW
-    player2.y = ball.y
-    if gameState == 'play' then
-        player2.y = ball.y - 10
-    end
+    player2.y = ball.y - 10
 
     -- update our ball based on its DX and DY only if we're in play state;
     -- scale the velocity by dt so movement is framerate-independent
